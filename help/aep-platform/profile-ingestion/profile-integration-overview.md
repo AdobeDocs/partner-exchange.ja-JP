@@ -1,6 +1,6 @@
 ---
-title: '"[!DNL Platform] プロファイル取り込みおよびアクセス統合ガイドの概要»'
-description: の統合について説明します。 [!DNL Experience Platform] プロファイルの取り込みとアクセス。
+title: 「[!DNL Platform] プロファイルの取得とアクセスの統合ガイドの概要」
+description: プロファイルの取り込みとアクセス  [!DNL Experience Platform]  統合について説明します。
 exl-id: a593511c-dd4c-4437-af73-f44d795cacb8
 source-git-commit: fe7519c35fb9155ce54cad85941c887f15881a38
 workflow-type: tm+mt
@@ -9,27 +9,27 @@ ht-degree: 0%
 
 ---
 
-# 統合ガイド： [!DNL Experience Platform] プロファイルの取り込みとアクセス
+# 統合ガイド：[!DNL Experience Platform] プロファイルの取り込みとアクセス
 
-パートナーは、この統合ガイドを使用して、Adobeでの入出力機能の構築を支援する必要があります。 [!DNL Experience Platform] (AEP) を参照してください。 バッチ取得、ストリーミング取得、統合プロファイルアクセス（エグレス）用の API があります。
+パートナーは、このAdobeガイドを使用して、統合 [!DNL Experience Platform] （AEP）での入力と出力の機能を構築するのを支援する必要があります。 バッチ取得、ストリーミング取得、統合プロファイルアクセス（エグレス）用の API が用意されています。
 
-開発を支援するには、 [Postman Collection](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman) は、Exchange チームによってAdobeされました。 このPostmanコレクションは、統合ガイド全体で参照されます。
+開発を支援するために、Adobe Exchangeチームによって ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman)0}Postman コレクション } が作成されました。 [このPostman コレクションは、統合ガイド全体で参照されます。
 
-Postmanコレクションのインストールと使用に関する詳細については、GitHub を参照してください。 [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページに貼り付けます。 また、 [loyalty](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json) および [profile](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データ。
+Postman コレクションのインストールと使用について詳しくは、Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページを参照してください。 また、[ ロイヤルティ ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json) データと [ プロファイル ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データのサンプルデータセットもあります。
 
-## 統合の使用例：インタラクティブな音声応答システム
+## 統合のユースケースの例：インタラクティブ音声応答システム
 
-インテグレーターの場合、 [!DNL Experience Platform] API は、ユーザーインターフェイス全体で提供されるプラットフォームのすべての機能を提供しますが、顧客ワークフローと自動データフローを作成する機能を提供します。 インテグレーターは、データセットのステータスを定期的に確認し、新しいデータ取り込み手順を設定し、独自のオーディエンスアクティベーションソリューションを統合プロファイルに統合します。
+インテグレーターにとっては、[!DNL Experience Platform] API は、ユーザーインターフェイス全体で提供されるプラットフォームのすべての機能を提供しますが、現在は、顧客ワークフローと自動データフローを作成する機能を備えています。 インテグレーターは、データセットのステータスを定期的に確認し、新しいデータ取り込み手順を設定し、独自のオーディエンスアクティベーションソリューションを統合プロファイルと統合します。
 
-Interactive Voice Response(IVR) システムとコールセンター管理ソフトウェアの世界を考えてみましょう。 仕入先は、 [!DNL Experience Platform] Experience Data Lake での顧客のコールセンターアクティビティの履歴情報を取り込むための API。 データが XDM に取り込まれている場合 `ExperienceEvent` スキーマ（顧客とのやり取りを表すスキーマ）を使用すると、これらのやり取りを、摩擦なしで統合プロファイルサービスに直接取り込むことができます。 この場合、 `callerId` は、顧客の識別子として使用されます。 ID サービスは、ID の解決を担当し、統合プロファイルサービスを支援して、コールセンターとの最近のやり取りから顧客のプロファイルにデータポイントを追加します。
+インタラクティブ音声応答（IVR）システムとコールセンター管理ソフトウェアの世界を考えてみましょう。 サプライヤーは、[!DNL Experience Platform] の API を使用して、顧客がエクスペリエンスデータレイクで行ったコールセンターアクティビティの履歴情報を取り込むことができます。 データが XDM `ExperienceEvent` スキーマ（顧客インタラクションを表すスキーマ）に取り込まれている場合、これらのインタラクションは、統合プロファイルサービスに直接摩擦なしで取り込むことができます。 この場合、`callerId` は顧客の識別子として使用されます。 ID サービスは、ID 解決を行い、統合プロファイルサービスがコールセンターとの最近のインタラクションからのお客様のプロファイルへのデータポイントの追加を支援します。
 
-次回、お客様がコールセンターに電話をかける際、最初に IVR によって回答されます。 メッセージをパーソナライズし、呼び出し元に合わせたオファーを提供するには、IVR システムが呼び出し元に関する詳細を理解する必要があります。 統合プロファイルとの API 統合は、ここで実現します。 IVR バックエンドは、ポイント参照について統合プロファイルサービスに問い合わせることができます。 次に、コールセンターのインタラクションのみに適用されるプロファイル属性か、完全な顧客プロファイルを参照します。このプロファイルには、他のタッチポイントでのインタラクションの属性も含まれます。 コールセンターと IVR プロバイダーは、複数のデータソースからのデータを組み合わせ、ID 解決と統合プロファイルを使用することで、Adobeがサポートする、カスタマイズされたカスタマーエクスペリエンスを提供できます [!DNL Experience Platform].&quot;
+お客様が次にコールセンターに電話をかけてきた際には、まず IVR から回答が得られます。 メッセージをパーソナライズし、呼び出し元に合わせてオファーを配信するには、IVR システムは呼び出し元についてさらに理解する必要があります。 統合プロファイルとの API 統合は、ここで行います。 IVR バックエンドは、ポイントルックアップのために統合プロファイルサービスに連絡できます。 次に、コールセンターインタラクションのみに適用されるプロファイル属性か、顧客プロファイル全体（他のタッチポイントでのインタラクションの属性も含む）のいずれかを調べます。 コールセンターと IVR プロバイダーは、複数のデータソースのデータを組み合わせ、ID 解決と統合プロファイルを使用することで、Adobe[!DNL Experience Platform] ールのサポートを受けながら、カスタマイズされたカスタマーエクスペリエンスを提供できます。」
 
-## 一般リソース
+## 一般的なリソース
 
-* AEP [製品ドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/documentation/overview.html).
-* AEP [拡張機能](https://www.adobe.com/insights/experience-platform-api-extensibility.html).
+* AEP [ 製品ドキュメント ](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/documentation/overview.html)。
+* AEP [ 拡張機能 ](https://www.adobe.com/insights/experience-platform-api-extensibility.html)。
 
-## ご質問やフィードバックは？
+## 質問やフィードバックは？
 
-すべての質問とフィードバックを [サポートチャネル](https://adobeexchangeec.zendesk.com/hc/ja-jp/requests/new)
+すべての質問とフィードバックは、[ サポートチャネル ](https://adobeexchangeec.zendesk.com/hc/ja-jp/requests/new) を通じて送信してください
