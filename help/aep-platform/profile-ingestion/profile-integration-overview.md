@@ -13,7 +13,7 @@ ht-degree: 0%
 
 パートナーは、このAdobeガイドを使用して、統合 [!DNL Experience Platform] （AEP）での入力と出力の機能を構築するのを支援する必要があります。 バッチ取得、ストリーミング取得、統合プロファイルアクセス（エグレス）用の API が用意されています。
 
-開発を支援するために、Adobe Exchangeチームによって ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman)0}Postman コレクション } が作成されました。 [このPostman コレクションは、統合ガイド全体で参照されます。
+開発を支援するために、Adobe Exchangeチームによって [&#128279;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman)0&rbrace;Postman コレクション &rbrace; が作成されました。 このPostman コレクションは、統合ガイド全体で参照されます。
 
 Postman コレクションのインストールと使用について詳しくは、Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページを参照してください。 また、[ ロイヤルティ ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json) データと [ プロファイル ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データのサンプルデータセットもあります。
 
