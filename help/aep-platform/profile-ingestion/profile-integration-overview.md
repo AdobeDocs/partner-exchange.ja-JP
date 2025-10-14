@@ -15,7 +15,7 @@ ht-degree: 0%
 
 開発を支援するために、Adobe Exchangeチームによって [&#128279;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman)0&rbrace;Postman コレクション &rbrace; が作成されました。 このPostman コレクションは、統合ガイド全体で参照されます。
 
-Postman コレクションのインストールと使用について詳しくは、Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページを参照してください。 また、[ ロイヤルティ ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json) データと [ プロファイル ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データのサンプルデータセットもあります。
+Postman コレクションのインストールと使用について詳しくは、Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページを参照してください。 また、[&#x200B; ロイヤルティ &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json) データと [&#x200B; プロファイル &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データのサンプルデータセットもあります。
 
 ## 統合のユースケースの例：インタラクティブ音声応答システム
 
@@ -27,9 +27,9 @@ Postman コレクションのインストールと使用について詳しくは
 
 ## 一般的なリソース
 
-* AEP [ 製品ドキュメント ](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/documentation/overview.html)。
-* AEP [ 拡張機能 ](https://www.adobe.com/insights/experience-platform-api-extensibility.html)。
+* AEP [&#x200B; 製品ドキュメント &#x200B;](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/documentation/overview.html)。
+* AEP [&#x200B; 拡張機能 &#x200B;](https://www.adobe.com/insights/experience-platform-api-extensibility.html)。
 
 ## 質問やフィードバックは？
 
-すべての質問とフィードバックは、[ サポートチャネル ](https://adobeexchangeec.zendesk.com/hc/ja-jp/requests/new) を通じて送信してください
+すべての質問とフィードバックは、[&#x200B; サポートチャネル &#x200B;](https://adobeexchangeec.zendesk.com/hc/ja-jp/requests/new) を通じて送信してください
