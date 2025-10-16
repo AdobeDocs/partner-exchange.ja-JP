@@ -11,11 +11,11 @@ ht-degree: 7%
 
 # プロファイル API を使用した統合プロファイルへのアクセス
 
-Adobe [!DNL Experience Platform] はリアルタイムで顧客プロファイルにアクセスできます。[[!DNL Experience Platform]  リアルタイム顧客プロファイル API](https://adobe.ly/2TtDHWr) は、これを操作するように設計されています。 Profile API を使用してリアルタイム顧客プロファイルデータにアクセスする方法については、この [ チュートリアル ](https://docs.adobe.com/content/help/en/experience-platform/profile/api/getting-started.html) を参照してください。
+Adobe [!DNL Experience Platform] はリアルタイムで顧客プロファイルにアクセスできます。[[!DNL Experience Platform]  リアルタイム顧客プロファイル API](https://adobe.ly/2TtDHWr) は、これを操作するように設計されています。 Profile API を使用してリアルタイム顧客プロファイルデータにアクセスする方法については、この [&#x200B; チュートリアル &#x200B;](https://docs.adobe.com/content/help/en/experience-platform/profile/api/getting-started.html) を参照してください。
 
 この記事では、上記にリンクされているチュートリアルを実質的に参照します。
 
-[Postman コレクション ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman) は、関連する呼び出しを番号で使用して、記事全体で参照されます。 Postman コレクションのインストールと使用について詳しくは、Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページを参照してください。 また、[ ロイヤルティ ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json) データと [ プロファイル ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データのサンプルデータセットもあります。
+[Postman コレクション &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman) は、関連する呼び出しを番号で使用して、記事全体で参照されます。 Postman コレクションのインストールと使用について詳しくは、Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページを参照してください。 また、[&#x200B; ロイヤルティ &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json) データと [&#x200B; プロファイル &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データのサンプルデータセットもあります。
 
 このセクションでは、Postman フォルダー 5：プロファイルルックアップ、5a：リアルタイムルックアップ PROFILE data または 5b：リアルタイムルックアップ EVENT data を使用します。
 
@@ -45,11 +45,11 @@ API のベースパスは `/data/core/ups/access/entities` です。
 * x-sandbox-name - Adobe Integration Manager から取得
 * Content-Type：application/json
 
-ヘッダーについて説明する詳細は、[ チュートリアル ](https://adobe.ly/2PTHuKv) を参照してください。
+ヘッダーについて説明する詳細は、[&#x200B; チュートリアル &#x200B;](https://adobe.ly/2PTHuKv) を参照してください。
 
 ## ID を使用したリアルタイム顧客プロファイルへのアクセス
 
-プロファイル API を使用すると、GET リクエスト経由で ID を使用してプロファイルにアクセスできます。 以下の節では、この [ ガイド ](https://docs.adobe.com/content/help/en/experience-platform/profile/api/entities.html) に従います。
+プロファイル API を使用すると、GET リクエスト経由で ID を使用してプロファイルにアクセスできます。 以下の節では、この [&#x200B; ガイド &#x200B;](https://docs.adobe.com/content/help/en/experience-platform/profile/api/entities.html) に従います。
 
 ### ID を使用したプロファイルデータへのアクセス
 
@@ -393,7 +393,7 @@ curl -X GET \
 
 ### プロファイルの時系列イベントのページネーション
 
-時系列イベントを取得すると、結果はページ付けされます。結果の後続のページがある場合、応答の&amp;lowbar;page.next パラメーターには ID が含まれます。 さらに、応答の&amp;lowbar;links.next.href パラメーターは、後続のページを取得するためのリクエスト URI を提供します。
+時系列イベントを取得すると、結果はページ付けされます。結果の後続のページがある場合、応答の&lowbar;page.next パラメーターには ID が含まれます。 さらに、応答の&lowbar;links.next.href パラメーターは、後続のページを取得するためのリクエスト URI を提供します。
 
 リクエスト :
 
@@ -411,7 +411,7 @@ curl -X GET \
 
 応答：
 
-正常な応答は、結果の次のページを返します。この例では、&amp;lowbar;page.next および&amp;lowbar;links.next.href の空の文字列値で示されるように、結果の後続のページがない応答を示しています。
+正常な応答は、結果の次のページを返します。この例では、&lowbar;page.next および&lowbar;links.next.href の空の文字列値で示されるように、結果の後続のページがない応答を示しています。
 
 ```
 {
@@ -463,5 +463,5 @@ curl -X GET \
 ## 参考記事
 
 * [リアルタイム顧客プロファイル API](https://adobe.ly/2TtDHWr)
-* [ プロファイル API チュートリアルを使用してリアルタイム顧客プロファイルデータにアクセスする ](https://docs.adobe.com/content/help/en/experience-platform/profile/api/getting-started.html)
-* [[!DNL Experience Platform]  認証ガイド ](https://docs.adobe.com/content/help/ja-JP/experience-platform/tutorials/authentication.html)
+* [&#x200B; プロファイル API チュートリアルを使用してリアルタイム顧客プロファイルデータにアクセスする &#x200B;](https://docs.adobe.com/content/help/en/experience-platform/profile/api/getting-started.html)
+* [[!DNL Experience Platform]  認証ガイド &#x200B;](https://docs.adobe.com/content/help/ja-JP/experience-platform/tutorials/authentication.html)
