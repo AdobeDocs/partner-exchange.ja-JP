@@ -9,4 +9,4 @@ ht-degree: 0%
 
 このリポジトリは、Git Corp から GitHub Enterprise Cloud に移行されました。 新しい場所：
 
-<https://github.com/Adobe-Enterprise-Docs/partner-exchange.en>
+<https://github.com/Adobe-Enterprise-Docs/partner-exchange.ja-JP>
