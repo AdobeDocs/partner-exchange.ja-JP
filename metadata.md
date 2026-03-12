@@ -2,7 +2,7 @@
 cloud: Experience Cloud
 solution: Experience Cloud
 type: Documentation
-git-repo: https://github.com/AdobeDocs/partner-exchange.en
+git-repo: https://github.com/AdobeDocs/partner-exchange.ja-JP
 index: false
 source-git-commit: 1285dba53d3ae0c43c8993728c5f8bc5af7546e2
 workflow-type: tm+mt
