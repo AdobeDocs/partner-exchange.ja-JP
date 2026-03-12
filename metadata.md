@@ -2,26 +2,26 @@
 cloud: Experience Cloud
 solution: Experience Cloud
 type: Documentation
-git-repo: https://github.com/AdobeDocs/partner-exchange.ja-JP
+git-repo: https://github.com/AdobeDocs/partner-exchange.en
 index: false
-source-git-commit: 349c1ab04220be712709ddd14fd46bf9efc8fa9e
+source-git-commit: 1285dba53d3ae0c43c8993728c5f8bc5af7546e2
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 99%
+source-wordcount: '125'
+ht-degree: 0%
 
 ---
 
 
-# 社内用のメタデータ
+# 内部使用のメタデータ
 
-metadata.md ファイルには、リポジトリー内にあるユーザーガイドの TOC.md ファイルにパススルーされる、リポジトリーレベルのメタデータが含まれています。任意のユーザーガイドの metadata.md コンテンツを変更したい場合は、任意の TOC.md ファイル内でおこないます。
+metadata.mdファイルには、リポジトリ内のユーザーガイドのTOC.mdファイルを通過するレポジレベルのメタデータが含まれています。 任意のユーザーガイドのmetadata.mdコンテンツを変更する場合は、任意のTOC.mdファイルで変更します。
 
-| メタデータ | 説明 |
+| メタデータ | 機能 |
 |--- |--- |
-| solution-title | 記事ヘッダーでリンクとして使用します |
-| solution-hub-url | Helpx ハブページを開きます |
-| solution-icon | ソリューションタイトルの横にソリューションアイコンを表示します。未実装 |
-| getting-started-url | Helpx 開始ページへのリンク |
-| tutorials-url | ビデオチュートリアル（ヘルプチュートリアルまたは KT チュートリアル）へのリンク |
-| mini-toc-levels | 右パネルに表示される見出しレベルの数を指定します。デフォルトは 2 です |
-| git-repo | 内部で使用するマスターリポジトリーの場所を指定します。 |
+| solution-title | 記事のヘッダーでリンクとして使用 |
+| solution-hub-url | helpxハブページを開きます |
+| solution-icon | ソリューションタイトルの横にソリューションアイコンを表示します。 未実装 |
+| getting-started-url | 開始ページのヘルプへのリンク |
+| tutorials-url | ビデオチュートリアルへのリンク – helpxチュートリアルまたはKTチュートリアル |
+| ミニ目次レベル | 右側のレールに表示される見出しレベルの数を指定します。 デフォルトは2です |
+| git-repo | 内部で使用するマスターリポジトリの場所を指定します |
