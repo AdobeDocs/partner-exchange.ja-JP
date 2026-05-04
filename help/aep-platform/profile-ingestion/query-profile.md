@@ -16,7 +16,7 @@ ht-degree: 8%
 
 # Profile APIを使用した統合プロファイルへのアクセス
 
-Adobe [!DNL Experience Platform]は、リアルタイムで顧客プロファイルにアクセスできます。[[!DNL Experience Platform]  リアルタイム顧客プロファイル API](https://adobe.ly/2TtDHWr)は、そのやり取りを目的として設計されています。 Profile APIを使用してリアルタイムの顧客プロファイルデータにアクセスする方法については、[&#x200B; チュートリアル &#x200B;](https://docs.adobe.com/content/help/en/experience-platform/profile/api/getting-started.html)を参照してください。
+Adobe [!DNL Experience Platform]は、リアルタイムで顧客プロファイルにアクセスできます。[[!DNL Experience Platform]  リアルタイム顧客プロファイル API](https://adobe.ly/2TtDHWr)は、そのやり取りを目的として設計されています。 Profile APIを使用してリアルタイムの顧客プロファイルデータにアクセスする方法については、[&#x200B; チュートリアル &#x200B;](https://docs.adobe.com/content/help/ja-JP/experience-platform/profile/api/getting-started.html)を参照してください。
 
 この記事では、上記のチュートリアルを大幅に参照します。
 
@@ -54,7 +54,7 @@ APIの基本パスは`/data/core/ups/access/entities`です
 
 ## IDを使用してリアルタイムの顧客プロファイルにアクセス
 
-Profile APIを使用すると、GET リクエストを介してIDを使用してプロファイルにアクセスできます。 以下のセクションは、この[&#x200B; ガイド &#x200B;](https://docs.adobe.com/content/help/en/experience-platform/profile/api/entities.html)に従います。
+Profile APIを使用すると、GET リクエストを介してIDを使用してプロファイルにアクセスできます。 以下のセクションは、この[&#x200B; ガイド &#x200B;](https://docs.adobe.com/content/help/ja-JP/experience-platform/profile/api/entities.html)に従います。
 
 ### IDを使用したプロファイルデータへのアクセス
 
@@ -468,5 +468,5 @@ curl -X GET \
 ## 関連記事
 
 * [Real-time Customer Profile API](https://adobe.ly/2TtDHWr)
-* [Profile API チュートリアルを使用したリアルタイム顧客プロファイルデータへのアクセス](https://docs.adobe.com/content/help/en/experience-platform/profile/api/getting-started.html)
+* [Profile API チュートリアルを使用したリアルタイム顧客プロファイルデータへのアクセス](https://docs.adobe.com/content/help/ja-JP/experience-platform/profile/api/getting-started.html)
 * [[!DNL Experience Platform]認証ガイド](https://docs.adobe.com/content/help/ja-JP/experience-platform/tutorials/authentication.html)

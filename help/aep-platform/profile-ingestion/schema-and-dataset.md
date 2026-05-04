@@ -26,11 +26,11 @@ ht-degree: 25%
 
 ### スキーマの作成
 
-パートナーは、この[&#x200B; チュートリアル &#x200B;](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-ui.html)に従って、UIを使用してスキーマを構築できます。 この例では、ロイヤルティプログラムのプロファイルスキーマを使用しています。 この例はプロファイルスキーマですが、イベントベースのスキーマも同様のプロセスを使用して使用できます。
+パートナーは、この[&#x200B; チュートリアル &#x200B;](https://docs.adobe.com/content/help/ja-JP/experience-platform/xdm/tutorials/create-schema-ui.html)に従って、UIを使用してスキーマを構築できます。 この例では、ロイヤルティプログラムのプロファイルスキーマを使用しています。 この例はプロファイルスキーマですが、イベントベースのスキーマも同様のプロセスを使用して使用できます。
 
 APIを使用するには、パートナーは、[!DNL Experience Platform]権限が有効になっている既存のAdobe I/O統合を持っている必要があります。 このガイドでは、[I/O統合の作成](https://docs.adobe.com/content/help/ja-JP/experience-platform/tutorials/home.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md)について説明しています。
 
-次に、[このリンク &#x200B;](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-api.html)にアクセスして、APIを使用してスキーマを構築する方法を確認します。
+次に、[このリンク &#x200B;](https://docs.adobe.com/content/help/ja-JP/experience-platform/xdm/tutorials/create-schema-api.html)にアクセスして、APIを使用してスキーマを構築する方法を確認します。
 
 Postmanを使用してスキーマを作成するには、フォルダー1:Create Schema、1a:Create Schema for PROFILE dataまたは1b:Create Schema for EVENT dataに含まれる呼び出しを使用します。
 
@@ -40,7 +40,7 @@ Adobe [!DNL Experience Platform]に取り込まれるすべてのデータは、
 
 カタログサービスは、[!DNL Experience Platform]内のデータの場所とリネージの記録システムであり、データセットの作成と管理に使用されます。 カタログは各データセットのメタデータを追跡します。このメタデータには、データセットが準拠するエクスペリエンスデータモデル（XDM）スキーマへの参照（次の節で説明）と、そのデータセットに取り込まれるレコードの数が含まれます。
 
-詳細なデータセットの概要については、[こちら](https://docs.adobe.com/content/help/en/experience-platform/catalog/datasets/overview.html)を参照してください。
+詳細なデータセットの概要については、[こちら](https://docs.adobe.com/content/help/ja-JP/experience-platform/catalog/datasets/overview.html)を参照してください。
 
 ### データセットの作成
 
@@ -58,9 +58,9 @@ UIを使用してデータセットを作成します。
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
-データセットユーザーガイドについては、[こちら](https://docs.adobe.com/content/help/en/experience-platform/catalog/datasets/user-guide.html)を参照してください。
+データセットユーザーガイドについては、[こちら](https://docs.adobe.com/content/help/ja-JP/experience-platform/catalog/datasets/user-guide.html)を参照してください。
 
-[APIを使用してデータセットを作成](https://docs.adobe.com/content/help/en/experience-platform/catalog/datasets/create.html)。
+[APIを使用してデータセットを作成](https://docs.adobe.com/content/help/ja-JP/experience-platform/catalog/datasets/create.html)。
 
 Postmanを使用してデータセットを作成するには、フォルダー2：データセットを作成、2a：プロファイルデータのデータセットを作成、または2b：イベントデータのデータセットを作成を使用します。
 

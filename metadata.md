@@ -4,7 +4,7 @@ solution: Experience Cloud
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
 type: Documentation
-git-repo: https://github.com/AdobeDocs/partner-exchange.en
+git-repo: https://github.com/AdobeDocs/partner-exchange.ja-JP
 index: false
 source-git-commit: 028e091ec221dad81046ae380f4a19d8f874f767
 workflow-type: tm+mt

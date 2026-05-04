@@ -73,7 +73,7 @@ AEP サンドボックスをリクエストしたメインの担当者には、A
 
 ## AEP UIの操作
 
-AEP UIの概要ビデオ [を見る](https://docs.adobe.com/content/help/en/platform-learn/tutorials/intro-to-platform/interface-tour.html)
+AEP UIの概要ビデオ [を見る](https://docs.adobe.com/content/help/ja-JP/platform-learn/tutorials/intro-to-platform/interface-tour.html)
 
 AEP UIには、左側のパネルで操作できる12の主要な領域があります。 ただし、このタイプの統合で最も重要なセクションは、スキーマ、データセット、プロファイルです。
 
