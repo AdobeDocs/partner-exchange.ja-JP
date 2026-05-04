@@ -1,51 +1,54 @@
 ---
-title: AEP へのバッチデータの読み込み
-description: バッチファイルをExperience Platformに読み込む方法を説明します
+title: AEPへのバッチデータのインポート
+description: バッチファイルをExperience Platformに読み込む方法について説明します
 exl-id: 50576b67-b3ba-498e-86f6-7e1986b76985
-source-git-commit: fe7519c35fb9155ce54cad85941c887f15881a38
+TQID: https://experienceleague.adobe.com/sJjuydUOIwlu4gv6qmokidQJVrYLN4--M8m3DTkcjf0
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 6698ae880d1ad13a9387cb1ba66b9ba152d1d407
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 9%
+source-wordcount: 646
+ht-degree: 11%
 
 ---
 
-# AEP へのバッチデータの読み込み
+# AEPへのバッチデータのインポート
 
-AEP は、フラットファイル（parquet など）からのプロファイルデータや、[!UICONTROL Experience Data Model] （XDM）レジストリの既知のスキーマに準拠するデータを含むバッチファイルを取り込むことができます。
+AEPは、フラットファイル （parquetなど）または[!UICONTROL Experience Data Model] （XDM） レジストリの既知のスキーマに準拠するデータから、プロファイルデータを含むバッチファイルを取り込むことができます。
 
-AEP では、バッチファイルを使用してデータを取り込むことができます。 JSON、Parquet および CSV の形式を使用できます。
+AEPは、バッチファイルを使用してデータを取り込むことができます。 JSON、Parquet、CSVの形式を使用できます。
 
-この記事では、次の内容について説明します。
+主な内容：
 
 * バッチ取り込みの前提条件
 * バッチ取り込みのベストプラクティスと制限
 * バッチの作成方法
-* バッチの完了方法
-* バッチステータスを確認する方法
+* バッチを完了する方法
+* バッチのステータスの確認方法
 
-[Postman コレクション &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman) は、関連する呼び出しを番号で使用して、記事全体で参照されます。 Postman コレクションのインストールと使用について詳しくは、Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページを参照してください。 また、[&#x200B; ロイヤルティ &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json) データと [&#x200B; プロファイル &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データのサンプルデータセットもあります。
+[Postman コレクション ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman)は、関連付けられた呼び出しを番号で使用して、記事全体で参照されます。 Postman コレクションのインストールと使用について詳しくは、Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページを参照してください。 [ ロイヤルティ ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json)および[ プロファイル ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データのサンプルデータセットもあります。
 
-このチュートリアルのすべての呼び出しには、Postman呼び出しフォルダー（4 : バッチインポート、4a : プロファイルデータのバッチインポートまたは 4b : イベントデータのバッチインポート）を使用します。
+このチュートリアルのすべての呼び出しには、Postman呼び出しフォルダーを使用します。4：バッチインポート、4a：プロファイルデータのバッチインポート、または4b：イベントデータのバッチインポート。
 
 ## バッチ取り込みの前提条件
 
 * スキーマを定義し、データセットを作成します。
-* データは、JSON、Parquet または CSV でフォーマットする必要があります。
-* [&#x200B; プラットフォームへの認証 &#x200B;](https://docs.adobe.com/content/help/ja-JP/experience-platform/tutorials/home.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md)。
-* 上記にリンクされている認証チュートリアルから、必要なヘッダーの値を収集します。
+* データは、JSON、Parquet、またはCSV形式にする必要があります。
+* [ プラットフォームに認証](https://docs.adobe.com/content/help/ja-JP/experience-platform/tutorials/home.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md)。
+* 上記のリンクされた認証チュートリアルから、必要なヘッダーの値を収集します。
 
 ## バッチ取り込みのベストプラクティスと制限
 
 * 最大バッチサイズ：100GB
 * バッチあたりの最大ファイル数：1500
-* ファイルが 512 MB を超える場合は、より小さなチャンクに分割する必要があります。 詳しくは、[&#x200B; 開発者ガイド &#x200B;](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/batch_data_ingestion_developer_guide.md) を参照してください。
+* ファイルが512 MBを超える場合は、小さなチャンクに分割する必要があります。 詳細については、[開発者ガイド ](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/batch_data_ingestion_developer_guide.md)を参照してください
 * 1 行あたりのプロパティまたはフィールドの最大数：10,000
 * 1 ユーザーあたりの 1 分あたりの最大バッチ数：138
 
 ## バッチの作成
 
-このチュートリアルでは、形式として JSON を使用します。 その他の形式の例については、[&#x200B; 開発者ガイド &#x200B;](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/batch_data_ingestion_developer_guide.md) を参照してください。
-JSON を入力形式として使用してバッチを作成します（データセット ID を含め、データがデータセットにリンクされた XDM スキーマに準拠していることを確認してください）。
+このチュートリアルでは、JSONをフォーマットとして使用します。 その他の形式の例については、[開発者ガイドを参照してください](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/batch_data_ingestion_developer_guide.md)
+JSONを入力形式として使用してバッチを作成します（データセット IDを含め、データがデータセットにリンクされたXDM スキーマに準拠していることを確認してください）。
 
 ```json
 curl -X POST "https://platform.adobe.io/data/foundation/import/batches" \
@@ -86,7 +89,7 @@ curl -X POST "https://platform.adobe.io/data/foundation/import/batches" \
 
 ## ファイルのアップロード
 
-新しく作成したバッチにファイルをアップロードできるようになりました（上記の応答の batch_id を使用）。
+新しく作成したバッチにファイルをアップロードできるようになりました（上記の応答のbatch_idを使用）。
 
 ```json
 curl -X PUT "https://platform.adobe.io/data/foundation/import/batches/{BATCH_ID}/datasets/{DATASET_ID}/files/{FILE_NAME}.json" \
@@ -100,7 +103,7 @@ curl -X PUT "https://platform.adobe.io/data/foundation/import/batches/{BATCH_ID}
 
 >[!NOTE]
 >
->API はシングルパートのアップロードのみをサポートしています。つまり、各ファイル/マイクロバッチは、個々の呼び出しでアップロードする必要があります。 content-type が application/octet-stream であることを確認します。
+>APIは単一パートのアップロードのみをサポートしているため、各ファイル/マイクロバッチを個別の呼び出しでアップロードする必要があります。 content-type が application/octet-stream であることを確認します。
 
 応答：
 
@@ -108,9 +111,9 @@ curl -X PUT "https://platform.adobe.io/data/foundation/import/batches/{BATCH_ID}
 200 OK
 ```
 
-## バッチの完了
+## バッチを完了
 
-すべてのファイルがアップロードされると、この呼び出しによってバッチの昇格準備が整ったことが通知されます。
+すべてのファイルがアップロードされると、この呼び出しは、バッチを昇格する準備ができていることを示します。
 
 ```json
 curl -X POST "https://platform.adobe.io/data/foundation/import/batches/{BATCH_ID}?action=COMPLETE" \
@@ -128,9 +131,9 @@ curl -X POST "https://platform.adobe.io/data/foundation/import/batches/{BATCH_ID
 
 ## バッチのステータスの確認
 
-バッチステータスは、UI または API 経由で確認できます（以下の呼び出しを参照）。 UI をチェックインするには、データセットに移動してステータスを確認します。
+バッチステータスは、UIまたはAPI経由で確認できます（以下の呼び出しを参照）。 UIを確認するには、DataSetに移動してステータスを確認します。
 
-様々なバッチ取り込みステータスが [&#x200B; こちら &#x200B;](https://adobe.ly/2TMMCmj) で確認できます。
+様々なバッチ取り込みステータスは[ここ](https://adobe.ly/2TMMCmj)にあります。
 
 
 ```json
@@ -231,11 +234,11 @@ curl GET "https://platform.adobe.io/data/foundation/catalog/batch/{BATCH_ID}" \
 }
 ```
 
-## 参考記事
+## 関連記事
 
-* [データ取得 API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/acpdr/swagger-specs)
-* [&#x200B; バッチ取得の概要 &#x200B;](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/ingest_architectural_overview.md)
-* [&#x200B; バッチ取得開発者ガイド &#x200B;](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/batch_data_ingestion_developer_guide.md)
-* [&#x200B; バッチ取得トラブルシューティングガイド &#x200B;](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/batch_data_ingestion_troubleshooting_guide.md)
-* [&#x200B; データ取り込みPostman コレクション &#x200B;](https://github.com/adobe/experience-platform-postman-samples/blob/master/apis/experience-platform/Data%20Ingestion%20API.postman_collection.json)
-* [&#x200B; 認証のチュートリアル &#x200B;](https://docs.adobe.com/content/help/ja-JP/experience-platform/tutorials/home.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md)
+* [Data Ingestion API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/acpdr/swagger-specs)
+* [バッチ取り込みの概要](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/ingest_architectural_overview.md)
+* [バッチ取り込み開発者ガイド](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/batch_data_ingestion_developer_guide.md)
+* [バッチ取り込みトラブルシューティングガイド](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/batch_data_ingestion_troubleshooting_guide.md)
+* [Data Ingestion Postman Collection](https://github.com/adobe/experience-platform-postman-samples/blob/master/apis/experience-platform/Data%20Ingestion%20API.postman_collection.json)
+* [認証チュートリアル](https://docs.adobe.com/content/help/ja-JP/experience-platform/tutorials/home.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md)

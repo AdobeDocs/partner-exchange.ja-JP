@@ -1,61 +1,64 @@
 ---
 title: 統合プロファイルへのアクセス
-description: API を使用して統合プロファイルにアクセスします。
+description: APIを使用して統合プロファイルにアクセスします。
 exl-id: c9d2fa2d-9ffe-4e66-996f-ad930bee22c6
-source-git-commit: 0690a52c3be0981a626e49729e51cb1729816c87
+TQID: https://experienceleague.adobe.com/ECndsmKpnN3No-PYL0kq0lktWuDK4Z6lFb99i82dK7k
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+topic_v2: id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 6698ae880d1ad13a9387cb1ba66b9ba152d1d407
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 7%
+source-wordcount: 797
+ht-degree: 8%
 
 ---
 
-# プロファイル API を使用した統合プロファイルへのアクセス
+# Profile APIを使用した統合プロファイルへのアクセス
 
-Adobe [!DNL Experience Platform] はリアルタイムで顧客プロファイルにアクセスできます。[[!DNL Experience Platform]  リアルタイム顧客プロファイル API](https://adobe.ly/2TtDHWr) は、これを操作するように設計されています。 Profile API を使用してリアルタイム顧客プロファイルデータにアクセスする方法については、この [&#x200B; チュートリアル &#x200B;](https://docs.adobe.com/content/help/ja-JP/experience-platform/profile/api/getting-started.html) を参照してください。
+Adobe [!DNL Experience Platform]は、リアルタイムで顧客プロファイルにアクセスできます。[[!DNL Experience Platform]  リアルタイム顧客プロファイル API](https://adobe.ly/2TtDHWr)は、そのやり取りを目的として設計されています。 Profile APIを使用してリアルタイムの顧客プロファイルデータにアクセスする方法については、[ チュートリアル ](https://docs.adobe.com/content/help/en/experience-platform/profile/api/getting-started.html)を参照してください。
 
-この記事では、上記にリンクされているチュートリアルを実質的に参照します。
+この記事では、上記のチュートリアルを大幅に参照します。
 
-[Postman コレクション &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman) は、関連する呼び出しを番号で使用して、記事全体で参照されます。 Postman コレクションのインストールと使用について詳しくは、Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページを参照してください。 また、[&#x200B; ロイヤルティ &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json) データと [&#x200B; プロファイル &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データのサンプルデータセットもあります。
+[Postman コレクション ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman)は、関連付けられた呼び出しを番号で使用して、記事全体で参照されます。 Postman コレクションのインストールと使用について詳しくは、Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページを参照してください。 [ ロイヤルティ ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json)および[ プロファイル ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データのサンプルデータセットもあります。
 
-このセクションでは、Postman フォルダー 5：プロファイルルックアップ、5a：リアルタイムルックアップ PROFILE data または 5b：リアルタイムルックアップ EVENT data を使用します。
+この節では、Postman フォルダー5: Profile Lookup, 5a: Real-time lookup PROFILE dataまたは5b: Real-time lookup EVENT dataを使用します。
 
 ## API の使用
 
-次の節では、Experience Platformへの認証について説明します。 API パス、ヘッダー情報などについて説明します。
+次の節は、Experience Platformへの認証に役立ちます。 API パスやヘッダー情報などについてご確認ください。
 
-### [!DNL Platform] に対する認証
+### [!DNL Platform]に認証
 
-以下のいずれかの呼び出しを行う前に、[this](https://docs.adobe.com/content/help/ja-JP/experience-platform/tutorials/authentication.html) 認証に関するチュートリアルを参照してください。
+以下の呼び出しを行う前に、[this](https://docs.adobe.com/content/help/ja-JP/experience-platform/tutorials/authentication.html)認証チュートリアルを参照してください。
 
 ### API パス
 
-リアルタイム顧客プロファイル API に必要なプラットフォームゲートウェイ URL は `https://platform.adobe.io/` です。
+リアルタイム顧客プロファイル APIに必要なプラットフォームゲートウェイ URLは次のとおりです：`https://platform.adobe.io/`
 
-API のベースパスは `/data/core/ups/access/entities` です。
+APIの基本パスは`/data/core/ups/access/entities`です
 
-完全パスの例：`https://platform.adobe.io/data/core/ups/access/entities`
+完全なパスの例は次のとおりです：`https://platform.adobe.io/data/core/ups/access/entities`
 
 ### ヘッダー情報
 
 ヘッダーには以下を含める必要があります。
 
 * 認証
-* x-gw-ims-org-id - console.adobe.io から取得
-* x-api-key - console.adobe.io を通じて取得
-* x-sandbox-name - Adobe Integration Manager から取得
+* x-gw-ims-org-id - console.adobe.ioから取得
+* x-api-key - console.adobe.ioから取得
+* x-sandbox-name - Adobe Integration Managerから取得
 * Content-Type：application/json
 
-ヘッダーについて説明する詳細は、[&#x200B; チュートリアル &#x200B;](https://adobe.ly/2PTHuKv) を参照してください。
+ヘッダーについて詳しくは、[ チュートリアル ](https://adobe.ly/2PTHuKv)を参照してください。
 
-## ID を使用したリアルタイム顧客プロファイルへのアクセス
+## IDを使用してリアルタイムの顧客プロファイルにアクセス
 
-プロファイル API を使用すると、GET リクエスト経由で ID を使用してプロファイルにアクセスできます。 以下の節では、この [&#x200B; ガイド &#x200B;](https://docs.adobe.com/content/help/ja-JP/experience-platform/profile/api/entities.html) に従います。
+Profile APIを使用すると、GET リクエストを介してIDを使用してプロファイルにアクセスできます。 以下のセクションは、この[ ガイド ](https://docs.adobe.com/content/help/en/experience-platform/profile/api/entities.html)に従います。
 
-### ID を使用したプロファイルデータへのアクセス
+### IDを使用したプロファイルデータへのアクセス
 
-API は、ID を使用してプロファイル情報にアクセスできるようにします。 これは、パラメーターおよびエンティティ ID 名前空間の 1 つとして、エンティティ ID を使用して/access/entities に対してGET リクエストを行うことで行います。 メモ：50 件のレコードを返すリクエストは、422 件の HTTP ステータスと「関連 ID が多すぎます」というメッセージのみを配信するので、より多くのパラメーターを使用して検索を絞り込む必要があります。
+APIは、IDを使用してプロファイル情報へのアクセスを許可します。 これは、パラメーターおよびエンティティ ID名前空間の1つとしてエンティティ IDを持つ/access/entitiesに対してGET リクエストを行うことで実行されます。 メモ：50件のレコードを返すリクエストは、422のHTTP ステータスと「関連IDが多すぎる」というメッセージのみを配信し、検索をより多くのパラメーターで絞り込む必要があることに注意してください。
 
-リクエスト :
+リクエスト：
 
 次のリクエストでは、顧客の電子メールと名前を ID を使用して取得します。
 
@@ -137,12 +140,12 @@ curl -X GET \
 }
 ```
 
-### ID のリストによるプロファイルへのアクセス
+### IDのリストによるプロファイルへのアクセス
 
-API は、/access/entities エンドポイントへの POST リクエストを使用し、ペイロードに ID を指定することで、ID のリストを使用してプロファイルへのアクセスを提供します。 これらの ID は、ID 値（entityId）と ID 名前空間（entityIdNS）で構成されます。
+APIは、/access/entities エンドポイントへのPOST リクエストを使用し、ペイロードでIDを指定することで、IDのリストを使用してプロファイルへのアクセスを許可します。 これらのIDは、ID値（entityId）とID名前空間（entityIdNS）で構成されます。
 
-リクエスト :
-次のリクエストは、ID のリストから複数の顧客の名前とメールアドレスを取得します。
+リクエスト：
+次のリクエストは、IDのリストによって複数の顧客の名前とメールアドレスを取得します。
 
 ```
 curl -X POST \
@@ -322,14 +325,14 @@ curl -X POST \
 
 ## 時系列イベント
 
-パートナーは、/access/entities エンドポイントにGET リクエストを行うことで、関連するプロファイルエンティティの ID によって時系列イベントにアクセスできます。
+パートナーは、/access/entities エンドポイントに対してGET リクエストを行うことで、関連するプロファイルエンティティのIDによって時系列イベントにアクセスできます。
 
 ### ID によるプロファイルの時系列イベントへのアクセス
 
-時系列イベントには、/access/entities エンドポイントに対してGET リクエストを実行し、関連するプロファイルエンティティの ID によってアクセスします。 この ID は、ID 値（entityId）と ID 名前空間（entityIdNS）で構成されます。
+時系列イベントは、/access/entities エンドポイントに対してGET リクエストを行うことで、関連するプロファイルエンティティのIDによってアクセスされます。 このIDは、ID値（entityId）とID名前空間（entityIdNS）で構成されます。
 
-リクエスト :
-次のリクエストは、ID でプロファイルエンティティを検索し、そのエンティティに関連付けられた時系列イベントについて、endUserID、web および channel **すべて** のプロパティの値を取得します。
+リクエスト：
+次のリクエストは、IDでプロファイルエンティティを検索し、エンティティに関連付けられたすべての**時系列イベントのプロパティ endUserID、web、およびチャネル**&#x200B;の値を取得します。
 
 ```
 curl -X GET \
@@ -393,11 +396,11 @@ curl -X GET \
 
 ### プロファイルの時系列イベントのページネーション
 
-時系列イベントを取得すると、結果はページ付けされます。結果の後続のページがある場合、応答の&lowbar;page.next パラメーターには ID が含まれます。 さらに、応答の&lowbar;links.next.href パラメーターは、後続のページを取得するためのリクエスト URI を提供します。
+時系列イベントを取得すると、結果はページ付けされます。 結果の後続ページがある場合、応答の&amp;lowbar;page.next パラメーターにはIDが含まれます。 さらに、応答の&amp;lowbar;links.next.href パラメーターは、後続のページを取得するためのリクエスト URIを提供します。
 
-リクエスト :
+リクエスト：
 
-次のリクエストは、_links.next.href URI をリクエストパスとして使用して、結果の次のページを取得します。
+次のリクエストは、_links.next.href URIをリクエストパスとして使用して、結果の次のページを取得します。
 
 ```
 curl -X GET \
@@ -411,7 +414,7 @@ curl -X GET \
 
 応答：
 
-正常な応答は、結果の次のページを返します。この例では、&lowbar;page.next および&lowbar;links.next.href の空の文字列値で示されるように、結果の後続のページがない応答を示しています。
+正常な応答は、結果の次のページを返します。 この例では、&amp;lowbar;page.nextおよび&amp;lowbar;links.next.hrefの空の文字列値で示されるように、結果の後続ページがない応答を示します。
 
 ```
 {
@@ -460,8 +463,8 @@ curl -X GET \
 }
 ```
 
-## 参考記事
+## 関連記事
 
-* [リアルタイム顧客プロファイル API](https://adobe.ly/2TtDHWr)
-* [&#x200B; プロファイル API チュートリアルを使用してリアルタイム顧客プロファイルデータにアクセスする &#x200B;](https://docs.adobe.com/content/help/ja-JP/experience-platform/profile/api/getting-started.html)
-* [[!DNL Experience Platform]  認証ガイド &#x200B;](https://docs.adobe.com/content/help/ja-JP/experience-platform/tutorials/authentication.html)
+* [Real-time Customer Profile API](https://adobe.ly/2TtDHWr)
+* [Profile API チュートリアルを使用したリアルタイム顧客プロファイルデータへのアクセス](https://docs.adobe.com/content/help/en/experience-platform/profile/api/getting-started.html)
+* [[!DNL Experience Platform]認証ガイド](https://docs.adobe.com/content/help/ja-JP/experience-platform/tutorials/authentication.html)
