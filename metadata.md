@@ -5,7 +5,7 @@ product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
 usetq: true
 type: Documentation
-git-repo: https://github.com/AdobeDocs/partner-exchange.en
+git-repo: https://github.com/AdobeDocs/partner-exchange.ja-JP
 index: false
 source-git-commit: 25ef775316bd81f8359473e6b54e7eebc9f78bf9
 workflow-type: tm+mt
