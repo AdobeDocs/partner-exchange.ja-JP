@@ -1,20 +1,21 @@
 ---
 title: '[!DNL Platform] プロファイル収集およびアクセス統合ガイドの概要'
-description: ' [!DNL Experience Platform]  プロファイルの取り込みとアクセスの統合について説明します。'
+description: '[!DNL Experience Platform] プロファイルの取り込みとアクセスの統合について説明します。'
 exl-id: a593511c-dd4c-4437-af73-f44d795cacb8
 TQID: https://experienceleague.adobe.com/whnqurJyM4QXl5ikRvez7hpKWRDuU4onzROsUk-WeSI
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 6698ae880d1ad13a9387cb1ba66b9ba152d1d407
+    internal-label: Insights
+source-git-commit: 3cfb1b99df78991b22d2a3fd0e3d3be822422acc
 workflow-type: tm+mt
-source-wordcount: 492
+source-wordcount: '493'
 ht-degree: 3%
-
 ---
-
 # 統合ガイド：[!DNL Experience Platform] プロファイルの取り込みとアクセス
 
 Adobe [!DNL Experience Platform] （AEP）でイングレス機能とエグレス機能を構築する際には、この統合ガイドを使用する必要があります。 バッチ取り込み、ストリーミング取り込み、統合プロファイルアクセス（エグレス）用のAPIがあります。

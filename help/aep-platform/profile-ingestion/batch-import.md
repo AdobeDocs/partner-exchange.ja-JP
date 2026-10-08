@@ -5,15 +5,15 @@ exl-id: 50576b67-b3ba-498e-86f6-7e1986b76985
 TQID: https://experienceleague.adobe.com/sJjuydUOIwlu4gv6qmokidQJVrYLN4--M8m3DTkcjf0
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 6698ae880d1ad13a9387cb1ba66b9ba152d1d407
+    internal-label: Troubleshooting
+source-git-commit: 3cfb1b99df78991b22d2a3fd0e3d3be822422acc
 workflow-type: tm+mt
-source-wordcount: 646
+source-wordcount: '646'
 ht-degree: 11%
-
 ---
-
 # AEPへのバッチデータのインポート
 
 AEPは、フラットファイル （parquetなど）または[!UICONTROL Experience Data Model] （XDM） レジストリの既知のスキーマに準拠するデータから、プロファイルデータを含むバッチファイルを取り込むことができます。

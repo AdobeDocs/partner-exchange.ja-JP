@@ -5,22 +5,27 @@ exl-id: 62c21615-4b03-4900-a1ad-8f809c836491
 TQID: https://experienceleague.adobe.com/A5sl-xNZBPjIKn6HO1iwM78IaQWQs4yBgbw9wwpMrGw
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
 feature_v2:
   - id: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
+    internal-label: Administration
 subfeature_v2:
   - id: b75843fa-0a67-4a44-a6b1-cc627b0481dc
+    internal-label: Support
   - id: fef08361-6ac5-460c-93fe-d063e40b6a49
+    internal-label: Getting started
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 6698ae880d1ad13a9387cb1ba66b9ba152d1d407
+    internal-label: Customer profiles
+source-git-commit: 3cfb1b99df78991b22d2a3fd0e3d3be822422acc
 workflow-type: tm+mt
-source-wordcount: 772
+source-wordcount: '772'
 ht-degree: 3%
-
 ---
-
 # AEP サンドボックスへのアクセスと探索
 
 主な内容：
@@ -40,9 +45,9 @@ Exchange パートナーは、独自のAdobe [!DNL Experience Cloud]組織（非
 * AEPへのアクセスは、パートナーのメインのAdobe [!DNL Experience Cloud] サンドボックス組織を通じて行われません。
 * AEPへのアクセスは、共有Adobe Exchange組織を通じて行われます。
 * 他の多くのAdobe Exchange パートナー企業も、同じ組織を使用してAEPにアクセスしています
-   * AEP サンドボックス機能を使用すると、この共有組織内のデータとアクティビティを他のパートナーが表示または変更することはできません。各パートナーは、共有組織内の別のサンドボックスにアクセスできます。
+  * AEP サンドボックス機能を使用すると、この共有組織内のデータとアクティビティを他のパートナーが表示または変更することはできません。各パートナーは、共有組織内の別のサンドボックスにアクセスできます。
 * この共有組織内の管理権限は非常に制限されています。
-* AEPのサンドボックスへのアクセス権を付与された後、パートナーには、Admin ConsoleまたはメインのExperience Cloud ホームページで、UIの右上に組織スイッチャーに2つの組織が表示されます。 ただし、AEPにサインインすると、共有組織のみが表示されます。
+* AEPのサンドボックスへのアクセス権を付与された後、パートナーには、Admin ConsoleまたはExperience Cloudのメインホームページで、UIの右上に組織スイッチャーに2つの組織が表示されます。 ただし、AEPにサインインすると、共有組織のみが表示されます。
 
 ## 共有AEP サンドボックスへのアクセスをリクエストする
 
@@ -79,9 +84,9 @@ AEP UIには、左側のパネルで操作できる12の主要な領域があり
 
 * ホーム – ランディング画面
 
-   * では、いくつかの基本アクティビティを提案します
-   * 学習コンテンツへのリンクをいくつか提供します
-   * スキーマ、データセット、プロファイルなど、AEPの主要なオブジェクトのダッシュボードビューを提供します
+  * では、いくつかの基本アクティビティを提案します
+  * 学習コンテンツへのリンクをいくつか提供します
+  * スキーマ、データセット、プロファイルなど、AEPの主要なオブジェクトのダッシュボードビューを提供します
 
 * ワークフロー – AEPにデータを取り込むための一般的なワークフローを起動します
 * 接続/ソース - AEPに入ってくるデータのソースを管理します
