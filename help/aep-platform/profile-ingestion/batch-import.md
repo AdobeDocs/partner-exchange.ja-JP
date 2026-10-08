@@ -5,15 +5,15 @@ exl-id: 50576b67-b3ba-498e-86f6-7e1986b76985
 TQID: https://experienceleague.adobe.com/sJjuydUOIwlu4gv6qmokidQJVrYLN4--M8m3DTkcjf0
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 6698ae880d1ad13a9387cb1ba66b9ba152d1d407
+    internal-label: Troubleshooting
+source-git-commit: 3cfb1b99df78991b22d2a3fd0e3d3be822422acc
 workflow-type: tm+mt
-source-wordcount: 646
+source-wordcount: '646'
 ht-degree: 11%
-
 ---
-
 # AEPへのバッチデータのインポート
 
 AEPは、フラットファイル （parquetなど）または[!UICONTROL Experience Data Model] （XDM） レジストリの既知のスキーマに準拠するデータから、プロファイルデータを含むバッチファイルを取り込むことができます。
@@ -28,7 +28,7 @@ AEPは、バッチファイルを使用してデータを取り込むことが�
 * バッチを完了する方法
 * バッチのステータスの確認方法
 
-[Postman コレクション &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman)は、関連付けられた呼び出しを番号で使用して、記事全体で参照されます。 Postman コレクションのインストールと使用について詳しくは、Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページを参照してください。 [&#x200B; ロイヤルティ &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json)および[&#x200B; プロファイル &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データのサンプルデータセットもあります。
+[Postman コレクション ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman)は、関連付けられた呼び出しを番号で使用して、記事全体で参照されます。 Postman コレクションのインストールと使用について詳しくは、Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページを参照してください。 [ ロイヤルティ ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json)および[ プロファイル ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データのサンプルデータセットもあります。
 
 このチュートリアルのすべての呼び出しには、Postman呼び出しフォルダーを使用します。4：バッチインポート、4a：プロファイルデータのバッチインポート、または4b：イベントデータのバッチインポート。
 
@@ -36,14 +36,14 @@ AEPは、バッチファイルを使用してデータを取り込むことが�
 
 * スキーマを定義し、データセットを作成します。
 * データは、JSON、Parquet、またはCSV形式にする必要があります。
-* [&#x200B; プラットフォームに認証](https://docs.adobe.com/content/help/ja-JP/experience-platform/tutorials/home.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md)。
+* [ プラットフォームに認証](https://docs.adobe.com/content/help/ja-JP/experience-platform/tutorials/home.html#!api-specification/markdown/narrative/tutorials/authenticate_to_acp_tutorial/authenticate_to_acp_tutorial.md)。
 * 上記のリンクされた認証チュートリアルから、必要なヘッダーの値を収集します。
 
 ## バッチ取り込みのベストプラクティスと制限
 
 * 最大バッチサイズ：100GB
 * バッチあたりの最大ファイル数：1500
-* ファイルが512 MBを超える場合は、小さなチャンクに分割する必要があります。 詳細については、[開発者ガイド &#x200B;](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/batch_data_ingestion_developer_guide.md)を参照してください
+* ファイルが512 MBを超える場合は、小さなチャンクに分割する必要があります。 詳細については、[開発者ガイド ](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/batch_data_ingestion_developer_guide.md)を参照してください
 * 1 行あたりのプロパティまたはフィールドの最大数：10,000
 * 1 ユーザーあたりの 1 分あたりの最大バッチ数：138
 

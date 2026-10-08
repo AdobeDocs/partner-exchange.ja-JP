@@ -1,27 +1,28 @@
 ---
 title: '[!DNL Platform] プロファイル収集およびアクセス統合ガイドの概要'
-description: ' [!DNL Experience Platform]  プロファイルの取り込みとアクセスの統合について説明します。'
+description: '[!DNL Experience Platform] プロファイルの取り込みとアクセスの統合について説明します。'
 exl-id: a593511c-dd4c-4437-af73-f44d795cacb8
 TQID: https://experienceleague.adobe.com/whnqurJyM4QXl5ikRvez7hpKWRDuU4onzROsUk-WeSI
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 6698ae880d1ad13a9387cb1ba66b9ba152d1d407
+    internal-label: Insights
+source-git-commit: 3cfb1b99df78991b22d2a3fd0e3d3be822422acc
 workflow-type: tm+mt
-source-wordcount: 492
+source-wordcount: '493'
 ht-degree: 3%
-
 ---
-
 # 統合ガイド：[!DNL Experience Platform] プロファイルの取り込みとアクセス
 
 Adobe [!DNL Experience Platform] （AEP）でイングレス機能とエグレス機能を構築する際には、この統合ガイドを使用する必要があります。 バッチ取り込み、ストリーミング取り込み、統合プロファイルアクセス（エグレス）用のAPIがあります。
 
-開発を支援するために、Adobe Exchange チームによって[Postman コレクション &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman)が作成されました。 このPostman コレクションは、統合ガイド全体で参照されています。
+開発を支援するために、Adobe Exchange チームによって[Postman コレクション ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman)が作成されました。 このPostman コレクションは、統合ガイド全体で参照されています。
 
-Postman コレクションのインストールと使用について詳しくは、Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページを参照してください。 [&#x200B; ロイヤルティ &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json)および[&#x200B; プロファイル &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データのサンプルデータセットもあります。
+Postman コレクションのインストールと使用について詳しくは、Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページを参照してください。 [ ロイヤルティ ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json)および[ プロファイル ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データのサンプルデータセットもあります。
 
 ## 統合の使用例：インタラクティブ音声応答システム
 
@@ -33,9 +34,9 @@ Postman コレクションのインストールと使用について詳しくは
 
 ## 一般的なリソース
 
-* AEP [製品ドキュメント &#x200B;](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/documentation/overview.html)。
+* AEP [製品ドキュメント ](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/documentation/overview.html)。
 * AEP [拡張性](https://www.adobe.com/insights/experience-platform-api-extensibility.html)。
 
 ## 質問またはフィードバックを送信しますか？
 
-すべての質問とフィードバックは、[&#x200B; サポートチャネル &#x200B;](https://adobeexchangeec.zendesk.com/hc/ja-jp/requests/new)から送信してください
+すべての質問とフィードバックは、[ サポートチャネル ](https://adobeexchangeec.zendesk.com/hc/ja-jp/requests/new)から送信してください
