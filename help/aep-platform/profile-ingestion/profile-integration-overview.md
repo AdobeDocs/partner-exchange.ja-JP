@@ -20,9 +20,9 @@ ht-degree: 3%
 
 Adobe [!DNL Experience Platform] （AEP）でイングレス機能とエグレス機能を構築する際には、この統合ガイドを使用する必要があります。 バッチ取り込み、ストリーミング取り込み、統合プロファイルアクセス（エグレス）用のAPIがあります。
 
-開発を支援するために、Adobe Exchange チームによって[Postman コレクション ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman)が作成されました。 このPostman コレクションは、統合ガイド全体で参照されています。
+開発を支援するために、Adobe Exchange チームによって[Postman コレクション &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman)が作成されました。 このPostman コレクションは、統合ガイド全体で参照されています。
 
-Postman コレクションのインストールと使用について詳しくは、Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページを参照してください。 [ ロイヤルティ ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json)および[ プロファイル ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データのサンプルデータセットもあります。
+Postman コレクションのインストールと使用について詳しくは、Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページを参照してください。 [&#x200B; ロイヤルティ &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json)および[&#x200B; プロファイル &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データのサンプルデータセットもあります。
 
 ## 統合の使用例：インタラクティブ音声応答システム
 
@@ -34,9 +34,9 @@ Postman コレクションのインストールと使用について詳しくは
 
 ## 一般的なリソース
 
-* AEP [製品ドキュメント ](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/documentation/overview.html)。
+* AEP [製品ドキュメント &#x200B;](https://docs.adobe.com/content/help/ja-JP/experience-platform/landing/documentation/overview.html)。
 * AEP [拡張性](https://www.adobe.com/insights/experience-platform-api-extensibility.html)。
 
 ## 質問またはフィードバックを送信しますか？
 
-すべての質問とフィードバックは、[ サポートチャネル ](https://adobeexchangeec.zendesk.com/hc/ja-jp/requests/new)から送信してください
+すべての質問とフィードバックは、[&#x200B; サポートチャネル &#x200B;](https://adobeexchangeec.zendesk.com/hc/ja-jp/requests/new)から送信してください

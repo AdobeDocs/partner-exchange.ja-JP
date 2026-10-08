@@ -51,7 +51,7 @@ Exchange パートナーは、独自のAdobe [!DNL Experience Cloud]組織（非
 
 ## 共有AEP サンドボックスへのアクセスをリクエストする
 
-次の情報を含む[ サポートリクエスト ](https://adobeexchangeec.zendesk.com/hc/ja-jp/requests/new)を送信します。
+次の情報を含む[&#x200B; サポートリクエスト &#x200B;](https://adobeexchangeec.zendesk.com/hc/ja-jp/requests/new)を送信します。
 
 * メールアドレス
 * 件名：AEP サンドボックスのリクエスト
@@ -68,7 +68,7 @@ AEP サンドボックスをリクエストしたメインの担当者には、A
 
 ## 追加ユーザーの招待
 
-次の情報を含む[ サポートリクエスト ](https://adobeexchangeec.zendesk.com/hc/ja-jp/requests/new)を送信します。
+次の情報を含む[&#x200B; サポートリクエスト &#x200B;](https://adobeexchangeec.zendesk.com/hc/ja-jp/requests/new)を送信します。
 
 * 依頼者のメールアドレス
 * 件名：AEP サンドボックス – 管理者/ユーザーを追加

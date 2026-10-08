@@ -21,11 +21,11 @@ Adobe [!DNL Experience Platform]では、プロファイル イベントとエ�
 * XDM ExperienceEventへのストリーミング
 * AEPを使用したLaunch拡張機能によるストリーミング
 
-[Postman コレクション ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman)は、関連付けられた呼び出しを番号で使用して、記事全体で参照されます。 Postman コレクションのインストールと使用について詳しくは、Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページを参照してください。 [ ロイヤルティ ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json)および[ プロファイル ](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データのサンプルデータセットもあります。
+[Postman コレクション &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman)は、関連付けられた呼び出しを番号で使用して、記事全体で参照されます。 Postman コレクションのインストールと使用について詳しくは、Github [README](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/README.md) ページを参照してください。 [&#x200B; ロイヤルティ &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20events.json)および[&#x200B; プロファイル &#x200B;](https://github.com/Adobe-Marketing-Cloud/exchange-aep-profile-integration-postman/blob/master/AEP%20loyalty%20profiles.json) データのサンプルデータセットもあります。
 
 ## 前提条件
 
-* [ プラットフォームに認証](https://docs.adobe.com/content/help/ja-JP/experience-platform/tutorials/authentication.html)。
+* [&#x200B; プラットフォームに認証](https://docs.adobe.com/content/help/ja-JP/experience-platform/tutorials/authentication.html)。
 * 上記のリンクされた認証チュートリアルから、必要なヘッダーの値を収集します。
 
 ## ストリーミング接続の作成
@@ -101,7 +101,7 @@ curl -X POST https://platform.adobe.io/data/foundation/flowservice/connections \
 
 ## Experience Platform タグを使用したAEPへのストリーミング
 
-Adobe [!DNL Experience Platform] Launch拡張機能は、Launch経由でAEPにストリーミングする方法を提供します。 詳しくは、[このガイド ](https://docs.adobe.com/content/help/ja-JP/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html)を参照してください。
+Adobe [!DNL Experience Platform] Launch拡張機能は、Launch経由でAEPにストリーミングする方法を提供します。 詳しくは、[このガイド &#x200B;](https://docs.adobe.com/content/help/ja-JP/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html)を参照してください。
 
 ## 関連記事
 
