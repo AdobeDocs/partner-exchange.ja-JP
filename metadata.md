@@ -6,7 +6,7 @@ product_v2:
     internal-label: "Experience Cloud"
 usetq: true
 type: Documentation
-git-repo: https://github.com/AdobeDocs/partner-exchange.en
+git-repo: https://github.com/AdobeDocs/partner-exchange.ja-JP
 index: false
 source-git-commit: 3cfb1b99df78991b22d2a3fd0e3d3be822422acc
 workflow-type: tm+mt

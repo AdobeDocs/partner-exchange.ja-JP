@@ -32,7 +32,7 @@ Adobe [!DNL Experience Platform]では、プロファイル イベントとエ�
 
 AEPにストリーミングするには、まずストリーミング接続を作成する必要があります。 ストリーミング接続には、ストリーミングデータのソースや、[!DNL Experience Data Model] （XDM） スキーマに属するレコードを送信しているかどうかの属性が含まれます。 ストリーミング接続を作成すると、データをAEPにストリーミングするために使用する一意のURLが与えられます。
 
-APIを介してストリーミング接続を作成する方法については[ここ](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/create-streaming-connection.html)に、UIを介してストリーミング接続を作成する方法については[ここ](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/create-streaming-connection-ui.html)にアクセスしてください。
+APIを介してストリーミング接続を作成する方法については[ここ](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/tutorials/create-streaming-connection.html)に、UIを介してストリーミング接続を作成する方法については[ここ](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/tutorials/create-streaming-connection-ui.html)にアクセスしてください。
 
 ```json
 curl -X POST https://platform.adobe.io/data/foundation/flowservice/connections \
@@ -75,7 +75,7 @@ curl -X POST https://platform.adobe.io/data/foundation/flowservice/connections \
 
 この節では、Postman呼び出しフォルダーを使用します。3：リアルタイム読み込み、3a：プロファイルデータのリアルタイム読み込み。
 
-ストリーミングプロファイルデータに対する応答を含む詳細なJSON リクエストについては、[こちら](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/streaming-record-data.html)を参照してください。
+ストリーミングプロファイルデータに対する応答を含む詳細なJSON リクエストについては、[こちら](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/tutorials/streaming-record-data.html)を参照してください。
 
 手順：
 
@@ -89,7 +89,7 @@ curl -X POST https://platform.adobe.io/data/foundation/flowservice/connections \
 
 この節では、Postman呼び出しフォルダーを使用します。3：リアルタイム読み込み、3b：プロファイルデータのリアルタイム読み込み。
 
-ストリーミングエクスペリエンスデータに対する応答を含む詳細なJSON リクエストについては、[こちら](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/streaming-time-series-data.html)を参照してください。
+ストリーミングエクスペリエンスデータに対する応答を含む詳細なJSON リクエストについては、[こちら](https://docs.adobe.com/content/help/ja-JP/experience-platform/ingestion/tutorials/streaming-time-series-data.html)を参照してください。
 
 手順：
 
